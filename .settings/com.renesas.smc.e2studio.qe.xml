@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<QE>
+<Segment id="Pin">
+<Setting id="48" value="P47"/>
+<Setting id="15" value="SDA"/>
+<Setting id="49" value="P46"/>
+<Setting id="16" value="SCL"/>
+<Setting id="50" value="P45"/>
+<Setting id="51" value="P41"/>
+<Setting id="41" value="CLKOUT"/>
+</Segment>
+<Segment id="Device">
+<Setting id="Series" value="RX200"/>
+<Setting id="Group" value="RX23W"/>
+<Setting id="PartNo" value="R5F523W8AxNG"/>
+<Setting id="PinCount" value="56"/>
+</Segment>
+<Segment id="Clock">
+<Setting id="UsbCLK" value="32000.0"/>
+<Setting id="PCLKD" value="32000.0"/>
+<Setting id="PCLKB" value="16000.0"/>
+<Setting id="CacHocoCLK" value="32000.0"/>
+<Setting id="VCC" value="3.3"/>
+<Setting id="PCLKA" value="32000.0"/>
+<Setting id="ICLK" value="32000.0"/>
+<Setting id="FCLK" value="16000.0"/>
+<Setting id="SysCLKSrc" value="1.0"/>
+<Setting id="ExtCLK" value="8000.0"/>
+</Segment>
+<Segment id="Component">
+<Setting id="r_bsp" value="FIT"/>
+<Setting id="r_ble_qe_utility" value="FIT"/>
+<Setting id="Config_BLE_PROFILE" value="QE"/>
+<Setting id="r_cmt_rx" value="FIT"/>
+<Setting id="r_ble_rx23w" value="FIT"/>
+<Setting id="Config_RIIC0" value="CG"/>
+<Setting id="r_lpc_rx" value="FIT"/>
+<Setting id="Config_PORT" value="CG"/>
+</Segment>
+</QE>

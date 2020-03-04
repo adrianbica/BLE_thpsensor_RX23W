@@ -1,0 +1,866 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<smc>
+<general version="2.0.0.0">
+<configuration active="true" id="com.renesas.smc.toolchain.rxc.configuration.release">
+<property id="com.renesas.smc.service.project.buildArtefactType" values="com.renesas.smc.service.project.buildArtefactType.exe"/>
+<toolchain id="com.renesas.smc.toolchain.rxc.toolchain.rxc">
+<option id="com.renesas.smc.toolchain.option.buildArtefactType" key="com.renesas.smc.toolchain.option.buildArtefactType.exe"/>
+<option id="com.renesas.smc.toolchain.option.rtos" key="com.renesas.smc.toolchain.option.rtos.none">
+<item id="com.renesas.smc.toolchain.option.rtos.freertos" value="FreeRTOS_RX_V10.0.00"/>
+</option>
+</toolchain>
+</configuration>
+<platform id="R5F523W8AxNG"/>
+<option id="board" value="TargetBoardRX23W (V1.0)"/>
+</general>
+<tool id="Clock">
+<Item current="true" id="vccSetting.isSelected"/>
+<Item current="" id="vccSetting.InputValue"/>
+<Item current="vcc2_7-5_5" id="vccSetting.OutputValue"/>
+<Item current="3.3" id="vccSetting.vccTxt"/>
+<Item current="false" id="mainclock.selectBox"/>
+<Item current="" id="mainclock.InputValue"/>
+<Item current="" id="mainclock.OutputValue"/>
+<Item current="8" error="false" id="mainclock.frequencyTxt"/>
+<Item current="sBox8192" id="mainclock.cycleBox"/>
+<Item current="srcR" id="mainclock.sourceBox"/>
+<Item current="false" id="subclock.selectBox"/>
+<Item current="" id="subclock.InputValue"/>
+<Item current="" id="subclock.OutputValue"/>
+<Item current="32.768" error="false" id="subclock.frequencyTxt"/>
+<Item current="standardCL" id="subclock.generalBox"/>
+<Item current="true" id="hococlock.selectBox"/>
+<Item current="" id="hococlock.InputValue"/>
+<Item current="32 MHz" id="hococlock.OutputValue"/>
+<Item current="frq32" id="hococlock.frequencyListBox"/>
+<Item current="false" id="lococlock.selectBox"/>
+<Item current="" id="lococlock.InputValue"/>
+<Item current="" id="lococlock.OutputValue"/>
+<Item current="4" error="false" id="lococlock.frequencyTxt"/>
+<Item current="false" id="iwdtclock.selectBox"/>
+<Item current="" id="iwdtclock.InputValue"/>
+<Item current="" id="iwdtclock.OutputValue"/>
+<Item current="15" error="false" id="iwdtclock.frequencyTxt"/>
+<Item current="false" id="pll.isSelected"/>
+<Item current="" id="pll.InputValue"/>
+<Item current="" id="pll.OutputValue"/>
+<Item current="mul13_5-1" error="false" id="pll.multiplyBox"/>
+<Item current="div1-2" error="false" id="pll.dividerBox"/>
+<Item current="" error="false" id="pll.MiddleValue"/>
+<Item current="false" id="pllusb.isSelected"/>
+<Item current="" id="pllusb.InputValue"/>
+<Item current="" id="pllusb.OutputValue"/>
+<Item current="mul12-1" error="false" id="pllusb.multiplyBox"/>
+<Item current="div1-2" error="false" id="pllusb.dividerBox"/>
+<Item current="" error="false" id="pllusb.MiddleValue"/>
+<Item current="true" id="sckselector.isSelected"/>
+<Item current="" id="sckselector.InputValue"/>
+<Item current="32 MHz" id="sckselector.OutputValue"/>
+<Item current="swthococlock" id="sckselector.radiobutton"/>
+<Item current="3" id="sckselector.CurrentValue"/>
+<Item current="true" id="sckselector.buttonDisable.0"/>
+<Item current="true" id="sckselector.buttonDisable.1"/>
+<Item current="true" id="sckselector.buttonDisable.2"/>
+<Item current="false" id="sckselector.buttonDisable.3"/>
+<Item current="true" id="sckselector.buttonDisable.4"/>
+<Item current="true" id="ckoselector.isSelected"/>
+<Item current="" id="ckoselector.InputValue"/>
+<Item current="32 MHz" id="ckoselector.OutputValue"/>
+<Item current="swthococlock" id="ckoselector.radiobutton"/>
+<Item current="3" id="ckoselector.CurrentValue"/>
+<Item current="true" id="ckoselector.buttonDisable.0"/>
+<Item current="true" id="ckoselector.buttonDisable.1"/>
+<Item current="true" id="ckoselector.buttonDisable.2"/>
+<Item current="false" id="ckoselector.buttonDisable.3"/>
+<Item current="true" id="ckoselector.buttonDisable.4"/>
+<Item current="false" id="lptselector.isSelected"/>
+<Item current="" id="lptselector.InputValue"/>
+<Item current="" id="lptselector.OutputValue"/>
+<Item current="swtsubclock" id="lptselector.radiobutton"/>
+<Item current="0" id="lptselector.CurrentValue"/>
+<Item current="true" id="lptselector.buttonDisable.0"/>
+<Item current="true" id="lptselector.buttonDisable.1"/>
+<Item current="true" id="pllusbselector.isSelected"/>
+<Item current="32 MHz" id="pllusbselector.InputValue"/>
+<Item current="32 MHz" id="pllusbselector.OutputValue"/>
+<Item current="swtsckselector" id="pllusbselector.radiobutton"/>
+<Item current="1" id="pllusbselector.CurrentValue"/>
+<Item current="true" id="pllusbselector.buttonDisable.0"/>
+<Item current="false" id="pllusbselector.buttonDisable.1"/>
+<Item current="true" id="fclkdivider.isSelected"/>
+<Item current="32 MHz" id="fclkdivider.InputValue"/>
+<Item current="16.0 MHz" id="fclkdivider.OutputValue"/>
+<Item current="sckselector.radiobutton.swthococlock" id="fclkdivider.Condition"/>
+<Item current="comboBox1-2" error="false" id="fclkdivider.comboBox"/>
+<Item current="true" id="pclkadivider.isSelected"/>
+<Item current="32 MHz" id="pclkadivider.InputValue"/>
+<Item current="32.0 MHz" id="pclkadivider.OutputValue"/>
+<Item current="sckselector.radiobutton.swthococlock" id="pclkadivider.Condition"/>
+<Item current="comboBox1-1" error="false" id="pclkadivider.comboBox"/>
+<Item current="true" id="pclkbdivider.isSelected"/>
+<Item current="32 MHz" id="pclkbdivider.InputValue"/>
+<Item current="16.0 MHz" id="pclkbdivider.OutputValue"/>
+<Item current="sckselector.radiobutton.swthococlock" id="pclkbdivider.Condition"/>
+<Item current="comboBox1-2" error="false" id="pclkbdivider.comboBox"/>
+<Item current="true" id="pclkddivider.isSelected"/>
+<Item current="32 MHz" id="pclkddivider.InputValue"/>
+<Item current="32.0 MHz" id="pclkddivider.OutputValue"/>
+<Item current="sckselector.radiobutton.swthococlock" id="pclkddivider.Condition"/>
+<Item current="comboBox1-1" error="false" id="pclkddivider.comboBox"/>
+<Item current="16.0 MHz" error="false" id="pclkddivider.PreOutput"/>
+<Item current="pclkbdivider" error="false" id="pclkddivider.PreOutputController"/>
+<Item current="true" id="iclkdivider.isSelected"/>
+<Item current="32 MHz" id="iclkdivider.InputValue"/>
+<Item current="32.0 MHz" id="iclkdivider.OutputValue"/>
+<Item current="sckselector.radiobutton.swthococlock" id="iclkdivider.Condition"/>
+<Item current="comboBox1-1" error="false" id="iclkdivider.comboBox"/>
+<Item current="true" id="ckodivider.isSelected"/>
+<Item current="32 MHz" id="ckodivider.InputValue"/>
+<Item current="16.0 MHz" id="ckodivider.OutputValue"/>
+<Item current="ckoselector.radiobutton.swthococlock" id="ckodivider.Condition"/>
+<Item current="comboBox1-2" error="false" id="ckodivider.comboBox"/>
+<Item current="true" id="uclk.isSelected"/>
+<Item current="32 MHz" id="uclk.InputValue"/>
+<Item current="32 MHz" id="uclk.OutputValue"/>
+<Item current="32" id="uclk.frequencyTxt"/>
+<Item current="MHz" id="uclk.unitTxt"/>
+<Item current="32" id="uclk.CurrentValue"/>
+<Item current="false" id="uclk.Disabled"/>
+<Item current="true" id="fclk.isSelected"/>
+<Item current="16.0 MHz" id="fclk.InputValue"/>
+<Item current="16.0 MHz" id="fclk.OutputValue"/>
+<Item current="16.0" id="fclk.frequencyTxt"/>
+<Item current="MHz" id="fclk.unitTxt"/>
+<Item current="16.0" id="fclk.CurrentValue"/>
+<Item current="false" id="fclk.Disabled"/>
+<Item current="true" id="iclk.isSelected"/>
+<Item current="32.0 MHz" id="iclk.InputValue"/>
+<Item current="32.0 MHz" id="iclk.OutputValue"/>
+<Item current="32.0" id="iclk.frequencyTxt"/>
+<Item current="MHz" id="iclk.unitTxt"/>
+<Item current="32.0" id="iclk.CurrentValue"/>
+<Item current="false" id="iclk.Disabled"/>
+<Item current="true" id="pclka.isSelected"/>
+<Item current="32.0 MHz" id="pclka.InputValue"/>
+<Item current="32.0 MHz" id="pclka.OutputValue"/>
+<Item current="32.0" id="pclka.frequencyTxt"/>
+<Item current="MHz" id="pclka.unitTxt"/>
+<Item current="32.0" id="pclka.CurrentValue"/>
+<Item current="false" id="pclka.Disabled"/>
+<Item current="true" id="pclkb.isSelected"/>
+<Item current="16.0 MHz" id="pclkb.InputValue"/>
+<Item current="16.0 MHz" id="pclkb.OutputValue"/>
+<Item current="16.0" id="pclkb.frequencyTxt"/>
+<Item current="MHz" id="pclkb.unitTxt"/>
+<Item current="16.0" id="pclkb.CurrentValue"/>
+<Item current="false" id="pclkb.Disabled"/>
+<Item current="true" id="pclkd.isSelected"/>
+<Item current="32.0 MHz" id="pclkd.InputValue"/>
+<Item current="32.0 MHz" id="pclkd.OutputValue"/>
+<Item current="32.0" id="pclkd.frequencyTxt"/>
+<Item current="MHz" id="pclkd.unitTxt"/>
+<Item current="32.0" id="pclkd.CurrentValue"/>
+<Item current="false" id="pclkd.Disabled"/>
+<Item current="false" id="cacmclk.isSelected"/>
+<Item current="" id="cacmclk.InputValue"/>
+<Item current="0" id="cacmclk.OutputValue"/>
+<Item current="-" id="cacmclk.frequencyTxt"/>
+<Item current="MHz" id="cacmclk.unitTxt"/>
+<Item current="8" id="cacmclk.CurrentValue"/>
+<Item current="true" id="cacmclk.Disabled"/>
+<Item current="false" id="caclclk.isSelected"/>
+<Item current="" id="caclclk.InputValue"/>
+<Item current="0" id="caclclk.OutputValue"/>
+<Item current="-" id="caclclk.frequencyTxt"/>
+<Item current="MHz" id="caclclk.unitTxt"/>
+<Item current="true" id="caclclk.Disabled"/>
+<Item current="true" id="cachclk.isSelected"/>
+<Item current="32 MHz" id="cachclk.InputValue"/>
+<Item current="32 MHz" id="cachclk.OutputValue"/>
+<Item current="32" id="cachclk.frequencyTxt"/>
+<Item current="MHz" id="cachclk.unitTxt"/>
+<Item current="32" id="cachclk.CurrentValue"/>
+<Item current="false" id="cachclk.Disabled"/>
+<Item current="false" id="rtcclk.selectBox"/>
+<Item current="" id="rtcclk.InputValue"/>
+<Item current="0" id="rtcclk.OutputValue"/>
+<Item current="-" id="rtcclk.frequencyTxt"/>
+<Item current="MHz" id="rtcclk.unitTxt"/>
+<Item current="true" id="rtcclk.Disabled"/>
+<Item current="true" id="rtcclk.SelectBoxDisabled"/>
+<Item current="false" id="cacsclk.isSelected"/>
+<Item current="" id="cacsclk.InputValue"/>
+<Item current="0" id="cacsclk.OutputValue"/>
+<Item current="-" id="cacsclk.frequencyTxt"/>
+<Item current="MHz" id="cacsclk.unitTxt"/>
+<Item current="true" id="cacsclk.Disabled"/>
+<Item current="false" id="cacilsclk.isSelected"/>
+<Item current="" id="cacilsclk.InputValue"/>
+<Item current="0" id="cacilsclk.OutputValue"/>
+<Item current="-" id="cacilsclk.frequencyTxt"/>
+<Item current="MHz" id="cacilsclk.unitTxt"/>
+<Item current="true" id="cacilsclk.Disabled"/>
+<Item current="false" id="lptclk.isSelected"/>
+<Item current="" id="lptclk.InputValue"/>
+<Item current="0" id="lptclk.OutputValue"/>
+<Item current="-" id="lptclk.frequencyTxt"/>
+<Item current="MHz" id="lptclk.unitTxt"/>
+<Item current="true" id="lptclk.Disabled"/>
+<Item current="true" id="clkout.selectBox"/>
+<Item current="16.0 MHz" id="clkout.InputValue"/>
+<Item current="16.0 MHz" id="clkout.OutputValue"/>
+<Item current="16.0" id="clkout.frequencyTxt"/>
+<Item current="MHz" id="clkout.unitTxt"/>
+<Item current="16.0" id="clkout.CurrentValue"/>
+<Item current="false" id="clkout.Disabled"/>
+<Item current="false" id="clkout.SelectBoxDisabled"/>
+</tool>
+<tool id="Pins" version="1.0.1.0">
+<pinItem allocation="41" comments="" direction="None" id="CLKOUT" locked="false" status="0"/>
+<pinItem allocation="15" comments="" direction="None" id="SDA" locked="false" status="0"/>
+<pinItem allocation="16" comments="" direction="None" id="SCL" locked="false" status="0"/>
+<pinItem allocation="51" comments="" direction="O" id="P41" locked="false" status="0"/>
+<pinItem allocation="50" comments="" direction="O" id="P45" locked="false" status="0"/>
+<pinItem allocation="48" comments="" direction="O" id="P47" locked="false" status="0"/>
+<pinItem allocation="49" comments="" direction="O" id="P46" locked="false" status="0"/>
+<pinnumItem comment="VCC_RF" id="44"/>
+<pinnumItem comment="DCLIN_D" id="45"/>
+<pinnumItem comment="DCLIN_A" id="46"/>
+<pinnumItem comment="PMOD1-RST" id="47"/>
+<pinnumItem comment="VREFL0" id="52"/>
+<pinnumItem comment="VREFH0" id="53"/>
+<pinnumItem comment="AVCC0" id="54"/>
+<pinnumItem comment="PMOD1-SS" id="11"/>
+<pinnumItem comment="PMOD1-MISO" id="12"/>
+<pinnumItem comment="AVSS0" id="56"/>
+<pinnumItem comment="PMOD1-SCK" id="13"/>
+<pinnumItem comment="PMOD1-MOSI" id="14"/>
+<pinnumItem comment="SW1" id="17"/>
+<pinnumItem comment="RES1" id="5"/>
+<pinnumItem comment="SERIAL-RXD" id="23"/>
+<pinnumItem comment="SERIAL-TXD" id="24"/>
+<pinnumItem comment="SERIAL-RTS#-CTS#" id="26"/>
+<pinnumItem comment="ICGND" id="28"/>
+<pinnumItem comment="PMOD1-IO2" id="29"/>
+<pinnumItem comment="LED0" id="30"/>
+<pinnumItem comment="PMOD1-IO3" id="31"/>
+<pinnumItem comment="ANT" id="32"/>
+<pinnumItem comment="PMOD1-INT" id="33"/>
+<pinnumItem comment="LED1" id="35"/>
+<pinnumItem comment="XTAL2_RF" id="37"/>
+<pinnumItem comment="XTAL1_RF" id="38"/>
+<pinnumItem comment="AVCC_RF" id="39"/>
+</tool>
+<tool id="Interrupt">
+<Item id="BSC_BUSERR" priority="15"/>
+<Item id="FCU_FRDYI" priority="15"/>
+<Item id="ICU_SWINT" priority="15"/>
+<Item id="CMT0_CMI0" priority="15"/>
+<Item id="CMT1_CMI1" priority="15"/>
+<Item id="CMT2_CMI2" priority="15"/>
+<Item id="CMT3_CMI3" priority="15"/>
+<Item id="CAC_FERRF" priority="15"/>
+<Item id="CAC_MENDF" priority="15"/>
+<Item id="CAC_OVFF" priority="15"/>
+<Item id="USB0_D0FIFO0" priority="15"/>
+<Item id="USB0_D1FIFO0" priority="15"/>
+<Item id="USB0_USBI0" priority="15"/>
+<Item id="SDHI_SBFAI" priority="15"/>
+<Item id="SDHI_CDETI" priority="15"/>
+<Item id="SDHI_CACI" priority="15"/>
+<Item id="SDHI_SDACI" priority="15"/>
+<Item id="RSPI0_SPEI0" priority="15"/>
+<Item id="RSPI0_SPRI0" priority="15"/>
+<Item id="RSPI0_SPTI0" priority="15"/>
+<Item id="RSPI0_SPII0" priority="15"/>
+<Item id="RSCAN_COMFRXINT" priority="15"/>
+<Item id="RSCAN_RXFINT" priority="15"/>
+<Item id="RSCAN_TXINT" priority="15"/>
+<Item id="RSCAN_CHERRINT" priority="15"/>
+<Item id="RSCAN_GLERRINT" priority="15"/>
+<Item id="DOC_DOPCF" priority="15"/>
+<Item id="CTSU_CTSUWR" priority="15"/>
+<Item id="CTSU_CTSURD" priority="15"/>
+<Item id="CTSU_CTSUFN" priority="15"/>
+<Item id="RTC_CUP" priority="15"/>
+<Item id="ICU_IRQ0" priority="15"/>
+<Item id="ICU_IRQ1" priority="15"/>
+<Item id="BLE_BLEIRQ" priority="15"/>
+<Item id="ICU_IRQ4" priority="15"/>
+<Item id="ICU_IRQ5" priority="15"/>
+<Item id="ICU_IRQ6" priority="15"/>
+<Item id="ICU_IRQ7" priority="15"/>
+<Item id="ELC_ELSR8I" priority="15"/>
+<Item id="LVD_LVD1" priority="15"/>
+<Item id="USB0_USBR0" priority="15"/>
+<Item id="VBATT_VBTLVDI" priority="15"/>
+<Item id="RTC_ALM" priority="15"/>
+<Item id="RTC_PRD" priority="15"/>
+<Item id="S12AD_S12ADI0" priority="15"/>
+<Item id="S12AD_GBADI" priority="15"/>
+<Item id="CMPB1_CMPB2" priority="15"/>
+<Item id="CMPB1_CMPB3" priority="15"/>
+<Item id="ELC_ELSR18I" priority="15"/>
+<Item id="ELC_ELSR19I" priority="15"/>
+<Item id="SSI0_SSIF0" priority="15"/>
+<Item id="SSI0_SSIRXI0" priority="15"/>
+<Item id="SSI0_SSITXI0" priority="15"/>
+<Item id="TSIP_RD" priority="15"/>
+<Item id="TSIP_WR" priority="15"/>
+<Item id="TSIP_ERR" priority="15"/>
+<Item id="MTU0_TGIA0" priority="15"/>
+<Item id="MTU0_TGIB0" priority="15"/>
+<Item id="MTU0_TGIC0" priority="15"/>
+<Item id="MTU0_TGID0" priority="15"/>
+<Item id="MTU0_TCIV0" priority="15"/>
+<Item id="MTU0_TGIE0" priority="15"/>
+<Item id="MTU0_TGIF0" priority="15"/>
+<Item id="MTU1_TGIA1" priority="15"/>
+<Item id="MTU1_TGIB1" priority="15"/>
+<Item id="MTU1_TCIV1" priority="15"/>
+<Item id="MTU1_TCIU1" priority="15"/>
+<Item id="MTU2_TGIA2" priority="15"/>
+<Item id="MTU2_TGIB2" priority="15"/>
+<Item id="MTU2_TCIV2" priority="15"/>
+<Item id="MTU2_TCIU2" priority="15"/>
+<Item id="MTU3_TGIA3" priority="15"/>
+<Item id="MTU3_TGIB3" priority="15"/>
+<Item id="MTU3_TGIC3" priority="15"/>
+<Item id="MTU3_TGID3" priority="15"/>
+<Item id="MTU3_TCIV3" priority="15"/>
+<Item id="MTU4_TGIA4" priority="15"/>
+<Item id="MTU4_TGIB4" priority="15"/>
+<Item id="MTU4_TGIC4" priority="15"/>
+<Item id="MTU4_TGID4" priority="15"/>
+<Item id="MTU4_TCIV4" priority="15"/>
+<Item id="TPU0_TGI0A" priority="15"/>
+<Item id="TPU0_TGI0B" priority="15"/>
+<Item id="TPU0_TGI0C" priority="15"/>
+<Item id="TPU0_TGI0D" priority="15"/>
+<Item id="TPU0_TCI0V" priority="15"/>
+<Item id="TPU1_TGI1A" priority="15"/>
+<Item id="TPU1_TGI1B" priority="15"/>
+<Item id="TPU1_TCI1V" priority="15"/>
+<Item id="TPU1_TCI1U" priority="15"/>
+<Item id="TPU2_TGI2A" priority="15"/>
+<Item id="TPU2_TGI2B" priority="15"/>
+<Item id="TPU2_TCI2V" priority="15"/>
+<Item id="TPU2_TCI2U" priority="15"/>
+<Item id="TPU3_TGI3A" priority="15"/>
+<Item id="TPU3_TGI3B" priority="15"/>
+<Item id="TPU3_TGI3C" priority="15"/>
+<Item id="TPU3_TGI3D" priority="15"/>
+<Item id="TPU3_TCI3V" priority="15"/>
+<Item id="TPU4_TGI4A" priority="15"/>
+<Item id="TPU4_TGI4B" priority="15"/>
+<Item id="TPU4_TCI4V" priority="15"/>
+<Item id="TPU4_TCI4U" priority="15"/>
+<Item id="TPU5_TGI5A" priority="15"/>
+<Item id="TPU5_TGI5B" priority="15"/>
+<Item id="TPU5_TCI5V" priority="15"/>
+<Item id="TPU5_TCI5U" priority="15"/>
+<Item id="POE_OEI1" priority="15"/>
+<Item id="POE_OEI2" priority="15"/>
+<Item id="TMR0_CMIA0" priority="15"/>
+<Item id="TMR0_CMIB0" priority="15"/>
+<Item id="TMR0_OVI0" priority="15"/>
+<Item id="TMR1_CMIA1" priority="15"/>
+<Item id="TMR1_CMIB1" priority="15"/>
+<Item id="TMR1_OVI1" priority="15"/>
+<Item id="TMR2_CMIA2" priority="15"/>
+<Item id="TMR2_CMIB2" priority="15"/>
+<Item id="TMR2_OVI2" priority="15"/>
+<Item id="TMR3_CMIA3" priority="15"/>
+<Item id="TMR3_CMIB3" priority="15"/>
+<Item id="TMR3_OVI3" priority="15"/>
+<Item id="DMAC_DMAC0I" priority="15"/>
+<Item id="DMAC_DMAC1I" priority="15"/>
+<Item id="DMAC_DMAC2I" priority="15"/>
+<Item id="DMAC_DMAC3I" priority="15"/>
+<Item id="SCI1_ERI1" priority="15"/>
+<Item id="SCI1_RXI1" priority="15"/>
+<Item id="SCI1_TXI1" priority="15"/>
+<Item id="SCI1_TEI1" priority="15"/>
+<Item id="SCI5_ERI5" priority="15"/>
+<Item id="SCI5_RXI5" priority="15"/>
+<Item id="SCI5_TXI5" priority="15"/>
+<Item id="SCI5_TEI5" priority="15"/>
+<Item id="BLE_ERI" priority="15"/>
+<Item id="BLE_RXI" priority="15"/>
+<Item id="BLE_TXI" priority="15"/>
+<Item id="BLE_TEI" priority="15"/>
+<Item id="SCI8_ERI8" priority="15"/>
+<Item id="SCI8_RXI8" priority="15"/>
+<Item id="SCI8_TXI8" priority="15"/>
+<Item id="SCI8_TEI8" priority="15"/>
+<Item id="SCI12_ERI12" priority="15"/>
+<Item id="SCI12_RXI12" priority="15"/>
+<Item id="SCI12_TXI12" priority="15"/>
+<Item id="SCI12_TEI12" priority="15"/>
+<Item id="SCI12_SCIX0" priority="15"/>
+<Item id="SCI12_SCIX1" priority="15"/>
+<Item id="SCI12_SCIX2" priority="15"/>
+<Item id="SCI12_SCIX3" priority="15"/>
+<Item id="RIIC0_EEI0" priority="8"/>
+<Item id="RIIC0_RXI0" priority="7"/>
+<Item id="RIIC0_TXI0" priority="7"/>
+<Item id="RIIC0_TEI0" priority="7"/>
+</tool>
+<tool id="SWComponent" version="1.0.0.0">
+<configuration inuse="true" name="r_bsp">
+<component description="Dependencies : None&#10;The r_bsp package provides a foundation for code to be built on top of. It provides startup code, iodefines, and MCU information for different boards. There are 2 folders that make up the r_bsp package. The 'mcu' folder contains files that are common to a MCU group. These files provide functionality such as easy register access, CPU functions, and a file named 'mcu_info.h' for each MCU group. The 'mcu_info.h' file has information about the MCU on the board and is configured based on the information given in r_bsp_config.h. The information in 'mcu_info.h' is used to help configure Renesas middleware that uses the r_bsp package. The 'board' folder has a folder with startup code for each supported board.  Which MCU and board is chosen is decided by the settings in 'platform.h'. The user can choose which board they are using by uncommenting the include path that applies to their board. For example, if you are using the RSK+RX64M then you would uncomment the #include &quot;./board/generic_rx64m/r_bsp.h&quot; include path. Users are encouraged to add their own boards to the 'board' directory. BSPs are configured by using the r_bsp_config.h file. Each board will have a reference configuration file named r_bsp_config_reference.h. The user should copy this file to their project, rename it to r_bsp_config.h, and use the options inside the file to configure the BSP for their project." detailDescription="Board Support Packages." display="r_bsp" id="r_bsp5.50" version="5.50">
+<gridItem id="BSP_CFG_STARTUP_DISABLE" selectedIndex="0"/>
+<gridItem id="BSP_CFG_USER_STACK_ENABLE" selectedIndex="1"/>
+<gridItem id="#pragma stacksize su" selectedIndex="0x1000"/>
+<gridItem id="#pragma stacksize si" selectedIndex="0x400"/>
+<gridItem id="BSP_CFG_HEAP_BYTES" selectedIndex="0x400"/>
+<gridItem id="BSP_CFG_IO_LIB_ENABLE" selectedIndex="1"/>
+<gridItem id="BSP_CFG_USER_CHARGET_ENABLED" selectedIndex="0"/>
+<gridItem id="BSP_CFG_USER_CHARGET_FUNCTION" selectedIndex="my_sw_charget_function"/>
+<gridItem id="BSP_CFG_USER_CHARPUT_ENABLED" selectedIndex="0"/>
+<gridItem id="BSP_CFG_USER_CHARPUT_FUNCTION" selectedIndex="my_sw_charput_function"/>
+<gridItem id="BSP_CFG_RUN_IN_USER_MODE" selectedIndex="0"/>
+<gridItem id="BSP_CFG_ID_CODE_LONG_1" selectedIndex="0xFFFFFFFF"/>
+<gridItem id="BSP_CFG_ID_CODE_LONG_2" selectedIndex="0xFFFFFFFF"/>
+<gridItem id="BSP_CFG_ID_CODE_LONG_3" selectedIndex="0xFFFFFFFF"/>
+<gridItem id="BSP_CFG_ID_CODE_LONG_4" selectedIndex="0xFFFFFFFF"/>
+<gridItem id="BSP_CFG_ROM_CODE_PROTECT_VALUE" selectedIndex="0xFFFFFFFF"/>
+<gridItem id="BSP_CFG_USER_LOCKING_ENABLED" selectedIndex="0"/>
+<gridItem id="BSP_CFG_USER_LOCKING_TYPE" selectedIndex="bsp_lock_t"/>
+<gridItem id="BSP_CFG_USER_LOCKING_HW_LOCK_FUNCTION" selectedIndex="my_hw_locking_function"/>
+<gridItem id="BSP_CFG_USER_LOCKING_HW_UNLOCK_FUNCTION" selectedIndex="my_hw_unlocking_function"/>
+<gridItem id="BSP_CFG_USER_LOCKING_SW_LOCK_FUNCTION" selectedIndex="my_sw_locking_function"/>
+<gridItem id="BSP_CFG_USER_LOCKING_SW_UNLOCK_FUNCTION" selectedIndex="my_sw_unlocking_function"/>
+<gridItem id="BSP_CFG_USER_WARM_START_CALLBACK_PRE_INITC_ENABLED" selectedIndex="0"/>
+<gridItem id="BSP_CFG_USER_WARM_START_PRE_C_FUNCTION" selectedIndex="my_sw_warmstart_prec_function"/>
+<gridItem id="BSP_CFG_USER_WARM_START_CALLBACK_POST_INITC_ENABLED" selectedIndex="0"/>
+<gridItem id="BSP_CFG_USER_WARM_START_POST_C_FUNCTION" selectedIndex="my_sw_warmstart_postc_function"/>
+<gridItem id="BSP_CFG_PARAM_CHECKING_ENABLE" selectedIndex="1"/>
+<gridItem id="BSP_CFG_FIT_IPL_MAX" selectedIndex="15"/>
+<gridItem id="BSP_CFG_CLKOUT_RF_MAIN" selectedIndex="0"/>
+<gridItem id="BSP_CFG_VBATT_ENABLE" selectedIndex="0"/>
+<gridItem id="BSP_CFG_SWINT_UNIT1_ENABLE" selectedIndex="1"/>
+<gridItem id="BSP_CFG_SWINT_TASK_BUFFER_NUMBER" selectedIndex="8"/>
+<gridItem id="BSP_CFG_SWINT_IPR_INITIAL_VALUE" selectedIndex="1"/>
+</component>
+<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+</configuration>
+<configuration inuse="true" name="r_ble_qe_utility">
+<component description="Dependencies : None&#10;This FIT module is necessary to use QE for Bluetooth Low Energy " detailDescription="QE for BLE Utility Module" display="r_ble_qe_utility" id="r_ble_qe_utility1.00" version="1.00"/>
+<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+</configuration>
+<configuration inuse="true" name="r_ble_rx23w">
+<component description="Dependency : r_bsp version(s) 5.40&#10;Dependency : r_lpc_rx version(s) 1.42, 2.00&#10;Dependency : r_cmt_rx version(s) 4.10, 4.20&#10;BLE stack package program" detailDescription="BLE stack" display="r_ble_rx23w" id="r_ble_rx23w1.10" version="1.10">
+<gridItem id="CLKOUT_RF" selectedIndex="0"/>
+<gridItem id="BLE_CFG_LIB_TYPE" selectedIndex="0"/>
+<gridItem id="BLE_CFG_RF_DBG_PUB_ADDR" selectedIndex="{0xFF,0xFF,0xFF,0x50,0x90,0x74}"/>
+<gridItem id="BLE_CFG_RF_DBG_RAND_ADDR" selectedIndex="{0xFF,0xFF,0xFF,0xFF,0xFF,0xFF}"/>
+<gridItem id="BLE_CFG_RF_CONN_MAX" selectedIndex="7"/>
+<gridItem id="BLE_CFG_RF_CONN_DATA_MAX" selectedIndex="251"/>
+<gridItem id="BLE_CFG_RF_ADV_DATA_MAX" selectedIndex="1650"/>
+<gridItem id="BLE_CFG_RF_ADV_SET_MAX" selectedIndex="4"/>
+<gridItem id="BLE_CFG_RF_SYNC_SET_MAX" selectedIndex="2"/>
+<gridItem id="BLE_CFG_EVENT_NOTIFY_CONN_START" selectedIndex="0"/>
+<gridItem id="BLE_CFG_EVENT_NOTIFY_CONN_CLOSE" selectedIndex="0"/>
+<gridItem id="BLE_CFG_EVENT_NOTIFY_ADV_START" selectedIndex="0"/>
+<gridItem id="BLE_CFG_EVENT_NOTIFY_ADV_CLOSE" selectedIndex="0"/>
+<gridItem id="BLE_CFG_EVENT_NOTIFY_SCAN_START" selectedIndex="0"/>
+<gridItem id="BLE_CFG_EVENT_NOTIFY_SCAN_CLOSE" selectedIndex="0"/>
+<gridItem id="BLE_CFG_EVENT_NOTIFY_INIT_START" selectedIndex="0"/>
+<gridItem id="BLE_CFG_EVENT_NOTIFY_INIT_CLOSE" selectedIndex="0"/>
+<gridItem id="BLE_CFG_EVENT_NOTIFY_DS_START" selectedIndex="0"/>
+<gridItem id="BLE_CFG_EVENT_NOTIFY_DS_WAKEUP" selectedIndex="0"/>
+<gridItem id="BLE_CFG_RF_CLVAL" selectedIndex="6"/>
+<gridItem id="BLE_CFG_RF_DDC_EN" selectedIndex="0"/>
+<gridItem id="BLE_CFG_RF_EXT32K_EN" selectedIndex="0"/>
+<gridItem id="BLE_CFG_RF_MCU_CLKOUT_PORT" selectedIndex="0"/>
+<gridItem id="BLE_CFG_RF_MCU_CLKOUT_FREQ" selectedIndex="0"/>
+<gridItem id="BLE_CFG_RF_SCA" selectedIndex="250"/>
+<gridItem id="BLE_CFG_RF_MAX_TX_POW" selectedIndex="1"/>
+<gridItem id="BLE_CFG_RF_DEF_TX_POW" selectedIndex="0"/>
+<gridItem id="BLE_CFG_RF_CLKOUT_EN" selectedIndex="0"/>
+<gridItem id="BLE_CFG_RF_DEEP_SLEEP_EN" selectedIndex="1"/>
+<gridItem id="BLE_CFG_MCU_MAIN_CLK_KHZ" selectedIndex="4000"/>
+<gridItem id="BLE_CFG_DEV_DATA_CF_BLOCK" selectedIndex="16"/>
+<gridItem id="BLE_CFG_DEV_DATA_DF_BLOCK" selectedIndex="-1"/>
+<gridItem id="BLE_CFG_GATT_MTU_SIZE" selectedIndex="247"/>
+<gridItem id="BLE_CFG_NUM_BOND" selectedIndex="7"/>
+<gridItem id="BLE_CFG_EN_SEC_DATA" selectedIndex="0"/>
+<gridItem id="BLE_CFG_SECD_DATA_DF_BLOCK" selectedIndex="0"/>
+<gridItem id="BLE_CFG_CMD_LINE_EN" selectedIndex="0"/>
+<gridItem id="BLE_CFG_CMD_LINE_CH" selectedIndex="8"/>
+<gridItem id="BLE_CFG_BOARD_LED_SW_EN" selectedIndex="0"/>
+<gridItem id="BLE_CFG_BOARD_TYPE" selectedIndex="0"/>
+<gridItem id="BLE_CFG_LOG_LEVEL" selectedIndex="3"/>
+<gridItem id="BLE_CFG_ABS_API_EN" selectedIndex="1"/>
+<gridItem id="BLE_CFG_SOFT_TIMER_EN" selectedIndex="1"/>
+<gridItem id="BLE_CFG_MCU_LPC_EN" selectedIndex="1"/>
+<gridItem id="BLE_CFG_HCI_MODE_EN" selectedIndex="0"/>
+</component>
+<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+</configuration>
+<configuration inuse="true" name="r_lpc_rx">
+<component description="Dependency : r_bsp version(s) 5.20, 5.40&#10;This module provides an interface to configure the low power modes." detailDescription="Control Low Power States." display="r_lpc_rx" id="r_lpc_rx2.00" version="2.00">
+<gridItem id="LPC_CFG_PARAM_CHECKING_ENABLE" selectedIndex="0"/>
+</component>
+<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+</configuration>
+<configuration id="4cd2b036-0e53-400d-8bb7-c86b8ecd7179" inuse="true" name="Config_BLE_PROFILE">
+<component description="This software component provides configurations for BLE Profile" detailDescription="" display="BLE Profile Creation" id="com.renesas.smc.tools.swcomponent.qe.cpc" version="1.0.0"/>
+<Model id="com.renesas.smc.tools.swcomponent.qe.cpc.component.BleDataModel" profileData="{&quot;profileName&quot;:&quot;Profile&quot;,&quot;qeIsCentralDevice&quot;:false,&quot;services&quot;:[{&quot;name&quot;:&quot;GAP Service&quot;,&quot;uuid&quot;:[&quot;0x00&quot;,&quot;0x18&quot;],&quot;abbreviation&quot;:&quot;gap&quot;,&quot;description&quot;:&quot;The generic_access service contains generic information about the device.&quot;,&quot;aux_properties&quot;:[&quot;None&quot;],&quot;error_codes&quot;:[],&quot;characteristics&quot;:[{&quot;name&quot;:&quot;Device Name&quot;,&quot;abbreviation&quot;:&quot;dev name&quot;,&quot;uuid&quot;:[&quot;0x00&quot;,&quot;0x2A&quot;],&quot;description&quot;:&quot;The Device Name characteristic shall contain the name of the device.&quot;,&quot;properties&quot;:[&quot;Read&quot;,&quot;Write&quot;],&quot;aux_properties&quot;:[],&quot;value&quot;:&quot;&quot;,&quot;db_size&quot;:128,&quot;fields&quot;:[{&quot;name&quot;:&quot;Name&quot;,&quot;description&quot;:&quot;Name&quot;,&quot;format&quot;:&quot;uint8_t&quot;,&quot;length&quot;:&quot;1&quot;,&quot;bits&quot;:[],&quot;fields&quot;:[]}],&quot;descriptors&quot;:[]},{&quot;name&quot;:&quot;Appearance&quot;,&quot;abbreviation&quot;:&quot;appearance&quot;,&quot;uuid&quot;:[&quot;0x01&quot;,&quot;0x2A&quot;],&quot;description&quot;:&quot;The Appearance characteristic defines the representation of the external appearance of the device.&quot;,&quot;properties&quot;:[&quot;Read&quot;],&quot;aux_properties&quot;:[],&quot;value&quot;:&quot;&quot;,&quot;db_size&quot;:2,&quot;fields&quot;:[{&quot;name&quot;:&quot;Category&quot;,&quot;description&quot;:&quot;Category&quot;,&quot;format&quot;:&quot;uint16_t&quot;,&quot;length&quot;:&quot;1&quot;,&quot;enumerations&quot;:[{&quot;value&quot;:&quot;Unknown&quot;,&quot;key&quot;:0,&quot;description&quot;:&quot;Unknown&quot;},{&quot;value&quot;:&quot;Generic Phone&quot;,&quot;key&quot;:64,&quot;description&quot;:&quot;Generic Phone&quot;},{&quot;value&quot;:&quot;Generic Computer&quot;,&quot;key&quot;:128,&quot;description&quot;:&quot;Generic Computer&quot;},{&quot;value&quot;:&quot;Generic Watch&quot;,&quot;key&quot;:192,&quot;description&quot;:&quot;Generic Watch&quot;},{&quot;value&quot;:&quot;Watch Sports Watch&quot;,&quot;key&quot;:193,&quot;description&quot;:&quot;Watch: Sports Watch&quot;},{&quot;value&quot;:&quot;Generic Clock&quot;,&quot;key&quot;:256,&quot;description&quot;:&quot;Generic Clock&quot;},{&quot;value&quot;:&quot;Generic Display&quot;,&quot;key&quot;:320,&quot;description&quot;:&quot;Generic Display&quot;},{&quot;value&quot;:&quot;Generic Remote Control&quot;,&quot;key&quot;:384,&quot;description&quot;:&quot;Generic Remote Control&quot;},{&quot;value&quot;:&quot;Generic Eye-glasses&quot;,&quot;key&quot;:448,&quot;description&quot;:&quot;Generic Eye-glasses&quot;},{&quot;value&quot;:&quot;Generic Tag&quot;,&quot;key&quot;:512,&quot;description&quot;:&quot;Generic Tag&quot;},{&quot;value&quot;:&quot;Generic Keyring&quot;,&quot;key&quot;:576,&quot;description&quot;:&quot;Generic Keyring&quot;},{&quot;value&quot;:&quot;Generic Media Player&quot;,&quot;key&quot;:640,&quot;description&quot;:&quot;Generic Media Player&quot;},{&quot;value&quot;:&quot;Generic Barcode Scanner&quot;,&quot;key&quot;:704,&quot;description&quot;:&quot;Generic Barcode Scanner&quot;},{&quot;value&quot;:&quot;Generic Thermometer&quot;,&quot;key&quot;:768,&quot;description&quot;:&quot;Generic Thermometer&quot;},{&quot;value&quot;:&quot;Thermometer Ear&quot;,&quot;key&quot;:769,&quot;description&quot;:&quot;Thermometer Ear&quot;},{&quot;value&quot;:&quot;Generic Heart rate Sensor&quot;,&quot;key&quot;:832,&quot;description&quot;:&quot;Generic Heart rate Sensor&quot;},{&quot;value&quot;:&quot;Heart Rate Sensor Heart Rate Belt&quot;,&quot;key&quot;:833,&quot;description&quot;:&quot;Heart Rate Sensor Heart Rate Belt&quot;},{&quot;value&quot;:&quot;Generic Blood Pressure&quot;,&quot;key&quot;:896,&quot;description&quot;:&quot;Generic Blood Pressure&quot;},{&quot;value&quot;:&quot;Blood Pressure Arm&quot;,&quot;key&quot;:897,&quot;description&quot;:&quot;Blood Pressure: Arm&quot;},{&quot;value&quot;:&quot;Blood Pressure Wrist&quot;,&quot;key&quot;:898,&quot;description&quot;:&quot;Blood Pressure: Wrist&quot;},{&quot;value&quot;:&quot;Human Interface Device&quot;,&quot;key&quot;:960,&quot;description&quot;:&quot;Human Interface Device (HID)&quot;},{&quot;value&quot;:&quot;Keyboard&quot;,&quot;key&quot;:961,&quot;description&quot;:&quot;Keyboard&quot;},{&quot;value&quot;:&quot;Mouse&quot;,&quot;key&quot;:962,&quot;description&quot;:&quot;Mouse&quot;},{&quot;value&quot;:&quot;Joystick&quot;,&quot;key&quot;:963,&quot;description&quot;:&quot;Joystick&quot;},{&quot;value&quot;:&quot;Gamepad&quot;,&quot;key&quot;:964,&quot;description&quot;:&quot;Gamepad&quot;},{&quot;value&quot;:&quot;Digitizer Tablet&quot;,&quot;key&quot;:965,&quot;description&quot;:&quot;Digitizer Tablet&quot;},{&quot;value&quot;:&quot;Card Reader&quot;,&quot;key&quot;:966,&quot;description&quot;:&quot;Card Reader&quot;},{&quot;value&quot;:&quot;Digital Pen&quot;,&quot;key&quot;:967,&quot;description&quot;:&quot;Digital Pen&quot;},{&quot;value&quot;:&quot;Barcode Scanner&quot;,&quot;key&quot;:968,&quot;description&quot;:&quot;Barcode Scanner&quot;},{&quot;value&quot;:&quot;Generic Glucose Meter&quot;,&quot;key&quot;:1024,&quot;description&quot;:&quot;Generic Glucose Meter&quot;},{&quot;value&quot;:&quot;Generic Running Walking Sensor&quot;,&quot;key&quot;:1088,&quot;description&quot;:&quot;Generic: Running Walking Sensor&quot;},{&quot;value&quot;:&quot;Running Walking Sensor In Shoe&quot;,&quot;key&quot;:1089,&quot;description&quot;:&quot;Running Walking Sensor: In-Shoe&quot;},{&quot;value&quot;:&quot;Running Walking Sensor On Shoe&quot;,&quot;key&quot;:1090,&quot;description&quot;:&quot;Running Walking Sensor: On-Shoe&quot;},{&quot;value&quot;:&quot;Running Walking Sensor On Hip&quot;,&quot;key&quot;:1091,&quot;description&quot;:&quot;Running Walking Sensor: On-Hip&quot;},{&quot;value&quot;:&quot;Generic: Cycling&quot;,&quot;key&quot;:1152,&quot;description&quot;:&quot;Generic Cycling&quot;},{&quot;value&quot;:&quot;Cycling Cycling Computer&quot;,&quot;key&quot;:1153,&quot;description&quot;:&quot;Cycling Cycling Computer&quot;},{&quot;value&quot;:&quot;Cycling Speed Sensor&quot;,&quot;key&quot;:1154,&quot;description&quot;:&quot;Cycling Speed Sensor&quot;},{&quot;value&quot;:&quot;Cycling Cadence Sensor&quot;,&quot;key&quot;:1155,&quot;description&quot;:&quot;Cycling Cadence Sensor&quot;},{&quot;value&quot;:&quot;Cycling Power Sensor&quot;,&quot;key&quot;:1156,&quot;description&quot;:&quot;Cycling: Power Sensor&quot;},{&quot;value&quot;:&quot;Cycling Speed and Cadence Sensor&quot;,&quot;key&quot;:1157,&quot;description&quot;:&quot;Cycling Speed and Cadence Sensor&quot;},{&quot;value&quot;:&quot;Generic Pulse Oximeter&quot;,&quot;key&quot;:3136,&quot;description&quot;:&quot;Generic Pulse Oximeter&quot;},{&quot;value&quot;:&quot;Fingertip&quot;,&quot;key&quot;:3137,&quot;description&quot;:&quot;Fingertip&quot;},{&quot;value&quot;:&quot;Wrist Worn&quot;,&quot;key&quot;:3138,&quot;description&quot;:&quot;Wrist Worn&quot;},{&quot;value&quot;:&quot;Generic: Weight Scale&quot;,&quot;key&quot;:3200,&quot;description&quot;:&quot;Generic Weight Scale&quot;},{&quot;value&quot;:&quot;Generic Outdoor Sports Activity&quot;,&quot;key&quot;:5184,&quot;description&quot;:&quot;Generic Outdoor Sports Activity&quot;},{&quot;value&quot;:&quot;Location Display Device&quot;,&quot;key&quot;:5185,&quot;description&quot;:&quot;Location Display Device&quot;},{&quot;value&quot;:&quot;Location and Navigation Display Device&quot;,&quot;key&quot;:5186,&quot;description&quot;:&quot;Location and Navigation Display Device&quot;},{&quot;value&quot;:&quot;Location Pod&quot;,&quot;key&quot;:5187,&quot;description&quot;:&quot;Location Pod&quot;},{&quot;value&quot;:&quot;Location and Navigation Pod&quot;,&quot;key&quot;:5188,&quot;description&quot;:&quot;Location and Navigation Pod&quot;}],&quot;fields&quot;:[]}],&quot;descriptors&quot;:[]},{&quot;name&quot;:&quot;Peripheral Preferred Connection Parameters&quot;,&quot;abbreviation&quot;:&quot;per pref conn param&quot;,&quot;uuid&quot;:[&quot;0x04&quot;,&quot;0x2A&quot;],&quot;description&quot;:&quot;The Peripheral Preferred Connection Parameters (PPCP) characteristic contains the preferred connection parameters of the Peripheral&quot;,&quot;properties&quot;:[&quot;Read&quot;],&quot;aux_properties&quot;:[],&quot;value&quot;:&quot;&quot;,&quot;db_size&quot;:8,&quot;fields&quot;:[{&quot;name&quot;:&quot;Minimum Connection Interval&quot;,&quot;description&quot;:&quot;Minimum Connection Interval&quot;,&quot;format&quot;:&quot;uint16_t&quot;,&quot;length&quot;:&quot;1&quot;,&quot;bits&quot;:[],&quot;fields&quot;:[]},{&quot;name&quot;:&quot;Maximum Connection Interval&quot;,&quot;description&quot;:&quot;Maximum Connection Interval&quot;,&quot;format&quot;:&quot;uint16_t&quot;,&quot;length&quot;:&quot;1&quot;,&quot;bits&quot;:[],&quot;fields&quot;:[]},{&quot;name&quot;:&quot;Slave Latency&quot;,&quot;description&quot;:&quot;Slave Latency&quot;,&quot;format&quot;:&quot;uint16_t&quot;,&quot;length&quot;:&quot;1&quot;,&quot;bits&quot;:[],&quot;fields&quot;:[]},{&quot;name&quot;:&quot;Connection Supervision Timeout Multiplier&quot;,&quot;description&quot;:&quot;Connection Supervision Timeout Multiplier&quot;,&quot;format&quot;:&quot;uint16_t&quot;,&quot;length&quot;:&quot;1&quot;,&quot;bits&quot;:[],&quot;fields&quot;:[]}],&quot;descriptors&quot;:[]},{&quot;name&quot;:&quot;Central Address Resolution&quot;,&quot;abbreviation&quot;:&quot;cent addr rslv&quot;,&quot;uuid&quot;:[&quot;0xA6&quot;,&quot;0x2A&quot;],&quot;description&quot;:&quot;The Peripheral should check if the peer device supports address resolution by reading the Central Address Resolution characteristic.&quot;,&quot;properties&quot;:[&quot;Read&quot;],&quot;aux_properties&quot;:[],&quot;value&quot;:&quot;&quot;,&quot;db_size&quot;:1,&quot;fields&quot;:[{&quot;name&quot;:&quot;Central Address Resolution Support&quot;,&quot;description&quot;:&quot;Central Address Resolution Support&quot;,&quot;format&quot;:&quot;uint8_t&quot;,&quot;length&quot;:&quot;1&quot;,&quot;bits&quot;:[],&quot;fields&quot;:[]}],&quot;descriptors&quot;:[]},{&quot;name&quot;:&quot;Resolvable Private Address Only&quot;,&quot;abbreviation&quot;:&quot;rslv priv addr only&quot;,&quot;uuid&quot;:[&quot;0xC9&quot;,&quot;0x2A&quot;],&quot;description&quot;:&quot;The device should check if the peer will only use Resolvable Private Addresses (RPAs) after bonding by reading the Resolvable Private Address Only characteristic.&quot;,&quot;properties&quot;:[&quot;Read&quot;],&quot;aux_properties&quot;:[],&quot;value&quot;:&quot;&quot;,&quot;db_size&quot;:1,&quot;fields&quot;:[{&quot;name&quot;:&quot;Resolvable Private Address Only&quot;,&quot;description&quot;:&quot;Resolvable Private Address Only&quot;,&quot;format&quot;:&quot;uint8_t&quot;,&quot;length&quot;:&quot;1&quot;,&quot;bits&quot;:[],&quot;fields&quot;:[]}],&quot;descriptors&quot;:[]}],&quot;qeServiceDataIsSigAdopted&quot;:true,&quot;qeServiceDefinitionJsonFileName&quot;:&quot;generic_access.service.json&quot;,&quot;qeServiceDataIsOutputServerRole&quot;:true,&quot;qeServiceDataIsOutputClentRole&quot;:true},{&quot;name&quot;:&quot;GATT Service&quot;,&quot;uuid&quot;:[&quot;0x01&quot;,&quot;0x18&quot;],&quot;abbreviation&quot;:&quot;gat&quot;,&quot;description&quot;:&quot;The Generic Attribute Service contains generic information of the GATT attributes.&quot;,&quot;aux_properties&quot;:[&quot;None&quot;],&quot;error_codes&quot;:[],&quot;characteristics&quot;:[{&quot;name&quot;:&quot;Service Changed&quot;,&quot;abbreviation&quot;:&quot;serv chged&quot;,&quot;uuid&quot;:[&quot;0x05&quot;,&quot;0x2A&quot;],&quot;description&quot;:&quot;The Service Changed characteristic is a control-point attribute that shall be used to indicate to connected devices that services have changed.&quot;,&quot;properties&quot;:[&quot;Indicate&quot;],&quot;aux_properties&quot;:[],&quot;value&quot;:&quot;&quot;,&quot;db_size&quot;:4,&quot;fields&quot;:[{&quot;name&quot;:&quot;start_hdl&quot;,&quot;description&quot;:&quot;Start of Affected Attribute Handle Range&quot;,&quot;format&quot;:&quot;uint16_t&quot;,&quot;length&quot;:&quot;1&quot;,&quot;bits&quot;:[],&quot;fields&quot;:[]},{&quot;name&quot;:&quot;end_hdl&quot;,&quot;description&quot;:&quot;End of Affected Attribute Handle Range&quot;,&quot;format&quot;:&quot;uint16_t&quot;,&quot;length&quot;:&quot;1&quot;,&quot;bits&quot;:[],&quot;fields&quot;:[]}],&quot;descriptors&quot;:[{&quot;name&quot;:&quot;Client Characteristic Configuration&quot;,&quot;abbreviation&quot;:&quot;cli cnfg&quot;,&quot;uuid&quot;:[&quot;0x02&quot;,&quot;0x29&quot;],&quot;description&quot;:&quot;Client Characteristic Configuration Descriptor&quot;,&quot;aux_properties&quot;:[&quot;Peer Specific&quot;],&quot;properties&quot;:[&quot;Read&quot;,&quot;Write&quot;],&quot;value&quot;:&quot;&quot;,&quot;db_size&quot;:2,&quot;fields&quot;:[{&quot;name&quot;:&quot;cli cnfg&quot;,&quot;description&quot;:&quot;Client Characteristic Configuration&quot;,&quot;format&quot;:&quot;uint16_t&quot;,&quot;length&quot;:&quot;1&quot;,&quot;bits&quot;:[],&quot;fields&quot;:[]}]}]}],&quot;qeServiceDataIsSigAdopted&quot;:true,&quot;qeServiceDefinitionJsonFileName&quot;:&quot;generic_attribute.service.json&quot;,&quot;qeServiceDataIsOutputServerRole&quot;:true,&quot;qeServiceDataIsOutputClentRole&quot;:false},{&quot;name&quot;:&quot;THP Sensing Service&quot;,&quot;uuid&quot;:[&quot;0x8c&quot;,&quot;0x99&quot;,&quot;0x0e&quot;,&quot;0xcc&quot;,&quot;0x50&quot;,&quot;0x65&quot;,&quot;0x4a&quot;,&quot;0xb3&quot;,&quot;0xb2&quot;,&quot;0x4c&quot;,&quot;0x01&quot;,&quot;0x00&quot;,&quot;0x00&quot;,&quot;0x00&quot;,&quot;0xb7&quot;,&quot;0xb2&quot;],&quot;abbreviation&quot;:&quot;THPS&quot;,&quot;description&quot;:&quot;&quot;,&quot;aux_properties&quot;:[&quot;None&quot;],&quot;error_codes&quot;:[],&quot;characteristics&quot;:[{&quot;name&quot;:&quot;Temperature&quot;,&quot;abbreviation&quot;:&quot;temperature&quot;,&quot;uuid&quot;:[&quot;0x6E&quot;,&quot;0x2A&quot;],&quot;description&quot;:&quot;Temperature&quot;,&quot;properties&quot;:[&quot;ExtendedProperties&quot;,&quot;Notify&quot;,&quot;Read&quot;,&quot;WritableAuxiliaries&quot;],&quot;aux_properties&quot;:[],&quot;value&quot;:&quot;&quot;,&quot;db_size&quot;:2,&quot;fields&quot;:[{&quot;name&quot;:&quot;Temperature&quot;,&quot;description&quot;:&quot;Temperature&quot;,&quot;format&quot;:&quot;int16_t&quot;,&quot;length&quot;:&quot;1&quot;,&quot;bits&quot;:[],&quot;fields&quot;:[]}],&quot;descriptors&quot;:[{&quot;name&quot;:&quot;Client Characteristic Configuration&quot;,&quot;abbreviation&quot;:&quot;cli cnfg&quot;,&quot;uuid&quot;:[&quot;0x02&quot;,&quot;0x29&quot;],&quot;description&quot;:&quot;Client Characteristic Configuration Descriptor&quot;,&quot;aux_properties&quot;:[&quot;Peer Specific&quot;],&quot;properties&quot;:[&quot;Read&quot;,&quot;Write&quot;],&quot;value&quot;:&quot;&quot;,&quot;db_size&quot;:2,&quot;fields&quot;:[{&quot;name&quot;:&quot;cli cnfg&quot;,&quot;description&quot;:[&quot;Client Characteristic Configuration&quot;,&quot;Client Characteristic Configuration&quot;],&quot;format&quot;:&quot;uint16_t&quot;,&quot;length&quot;:&quot;1&quot;,&quot;bits&quot;:[],&quot;fields&quot;:[]}]}]},{&quot;name&quot;:&quot;Humidity&quot;,&quot;abbreviation&quot;:&quot;humidity&quot;,&quot;uuid&quot;:[&quot;0x6f&quot;,&quot;0x2a&quot;],&quot;description&quot;:&quot;Humidity&quot;,&quot;properties&quot;:[&quot;Notify&quot;,&quot;Read&quot;],&quot;aux_properties&quot;:[],&quot;value&quot;:&quot;&quot;,&quot;db_size&quot;:2,&quot;fields&quot;:[{&quot;name&quot;:&quot;Humidity&quot;,&quot;format&quot;:&quot;uint16_t&quot;,&quot;length&quot;:&quot;1&quot;,&quot;bits&quot;:[],&quot;fields&quot;:[]}],&quot;descriptors&quot;:[{&quot;name&quot;:&quot;Client Characteristic Configuration&quot;,&quot;abbreviation&quot;:&quot;cli cnfg&quot;,&quot;uuid&quot;:[&quot;0x02&quot;,&quot;0x29&quot;],&quot;description&quot;:&quot;Client Characteristic Configuration Descriptor&quot;,&quot;aux_properties&quot;:[&quot;Peer Specific&quot;],&quot;properties&quot;:[&quot;Read&quot;,&quot;Write&quot;],&quot;value&quot;:&quot;&quot;,&quot;db_size&quot;:2,&quot;fields&quot;:[{&quot;name&quot;:&quot;cli cnfg&quot;,&quot;description&quot;:&quot;Client Characteristic Configuration&quot;,&quot;format&quot;:&quot;uint16_t&quot;,&quot;length&quot;:&quot;1&quot;,&quot;bits&quot;:[],&quot;fields&quot;:[]}]}]},{&quot;name&quot;:&quot;Pressure&quot;,&quot;abbreviation&quot;:&quot;pressure&quot;,&quot;uuid&quot;:[&quot;0x6d&quot;,&quot;0x2a&quot;],&quot;description&quot;:&quot;Pressure&quot;,&quot;properties&quot;:[&quot;Notify&quot;,&quot;Read&quot;],&quot;aux_properties&quot;:[],&quot;value&quot;:&quot;&quot;,&quot;db_size&quot;:4,&quot;fields&quot;:[{&quot;name&quot;:&quot;Pressure&quot;,&quot;format&quot;:&quot;uint32_t&quot;,&quot;length&quot;:&quot;1&quot;,&quot;bits&quot;:[],&quot;fields&quot;:[]}],&quot;descriptors&quot;:[{&quot;name&quot;:&quot;Client Characteristic Configuration&quot;,&quot;abbreviation&quot;:&quot;cli cnfg&quot;,&quot;uuid&quot;:[&quot;0x02&quot;,&quot;0x29&quot;],&quot;description&quot;:&quot;Client Characteristic Configuration Descriptor&quot;,&quot;aux_properties&quot;:[&quot;Peer Specific&quot;],&quot;properties&quot;:[&quot;Read&quot;,&quot;Write&quot;],&quot;value&quot;:&quot;&quot;,&quot;db_size&quot;:2,&quot;fields&quot;:[{&quot;name&quot;:&quot;cli cnfg&quot;,&quot;description&quot;:&quot;Client Characteristic Configuration&quot;,&quot;format&quot;:&quot;uint16_t&quot;,&quot;length&quot;:&quot;1&quot;,&quot;bits&quot;:[],&quot;fields&quot;:[]}]}]}],&quot;qeServiceDataIsSigAdopted&quot;:false,&quot;qeServiceDefinitionJsonFileName&quot;:&quot;THPS.service.json&quot;,&quot;qeServiceDataIsOutputServerRole&quot;:true,&quot;qeServiceDataIsOutputClentRole&quot;:false},{&quot;name&quot;:&quot;Relay Service&quot;,&quot;uuid&quot;:[&quot;0x8c&quot;,&quot;0x99&quot;,&quot;0x0e&quot;,&quot;0xcc&quot;,&quot;0x50&quot;,&quot;0x65&quot;,&quot;0x4a&quot;,&quot;0xb3&quot;,&quot;0xb2&quot;,&quot;0x4c&quot;,&quot;0x03&quot;,&quot;0x00&quot;,&quot;0x00&quot;,&quot;0x00&quot;,&quot;0xb7&quot;,&quot;0xb2&quot;],&quot;abbreviation&quot;:&quot;relay_service&quot;,&quot;description&quot;:&quot;&quot;,&quot;aux_properties&quot;:[&quot;None&quot;],&quot;error_codes&quot;:[],&quot;characteristics&quot;:[{&quot;name&quot;:&quot;Digital 1&quot;,&quot;abbreviation&quot;:&quot;digital 1&quot;,&quot;uuid&quot;:[&quot;0x56&quot;,&quot;0x2A&quot;],&quot;description&quot;:&quot;The Digital characteristic is used to expose and change the state of an IOMs digital signals.&quot;,&quot;properties&quot;:[&quot;Notify&quot;,&quot;Read&quot;,&quot;Write&quot;,&quot;WriteWithoutResponse&quot;],&quot;aux_properties&quot;:[],&quot;value&quot;:&quot;&quot;,&quot;db_size&quot;:2,&quot;fields&quot;:[{&quot;name&quot;:&quot;Digital 1&quot;,&quot;description&quot;:&quot;Digital 1&quot;,&quot;format&quot;:&quot;uint16_t&quot;,&quot;length&quot;:&quot;1&quot;,&quot;enumerations&quot;:[{&quot;value&quot;:&quot;Inactive&quot;,&quot;key&quot;:0,&quot;description&quot;:&quot;Inactive&quot;},{&quot;value&quot;:&quot;Active&quot;,&quot;key&quot;:1,&quot;description&quot;:&quot;Active&quot;},{&quot;value&quot;:&quot;Tri-state&quot;,&quot;key&quot;:2,&quot;description&quot;:&quot;Tri-state&quot;},{&quot;value&quot;:&quot;Output-state&quot;,&quot;key&quot;:3,&quot;description&quot;:&quot;Output-state&quot;}],&quot;fields&quot;:[]}],&quot;descriptors&quot;:[{&quot;name&quot;:&quot;Client Characteristic Configuration&quot;,&quot;abbreviation&quot;:&quot;cli cnfg&quot;,&quot;uuid&quot;:[&quot;0x02&quot;,&quot;0x29&quot;],&quot;description&quot;:&quot;Client Characteristic Configuration Descriptor&quot;,&quot;aux_properties&quot;:[&quot;Peer Specific&quot;],&quot;properties&quot;:[&quot;Read&quot;,&quot;Write&quot;],&quot;value&quot;:&quot;&quot;,&quot;db_size&quot;:2,&quot;fields&quot;:[{&quot;name&quot;:&quot;cli cnfg&quot;,&quot;description&quot;:&quot;Client Characteristic Configuration&quot;,&quot;format&quot;:&quot;uint16_t&quot;,&quot;length&quot;:&quot;1&quot;,&quot;bits&quot;:[],&quot;fields&quot;:[]}]}]}],&quot;qeServiceDataIsSigAdopted&quot;:false,&quot;qeServiceDefinitionJsonFileName&quot;:&quot;relay_service.service.json&quot;,&quot;qeServiceDataIsOutputServerRole&quot;:true,&quot;qeServiceDataIsOutputClentRole&quot;:false}]}"/>
+<source description="Code generator for QE components" display="QE Configurator" id="com.renesas.smc.tools.swcomponent.qe.source"/>
+</configuration>
+<configuration inuse="true" name="r_cmt_rx">
+<component description="Dependency : r_bsp version(s) 5.50&#10;This module creates a timer tick using a CMT channel based on a frequency input by the user." detailDescription="Simple CMT driver for creating timer tick." display="r_cmt_rx" id="r_cmt_rx4.30" version="4.30">
+<gridItem id="CMT_RX_CFG_IPR" selectedIndex="5"/>
+</component>
+<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+<source description="Components supporting Firmware Integration Technology" display="Firmware Integration Technology" id="com.renesas.smc.tools.swcomponent.fit.source"/>
+</configuration>
+<configuration id="0e6b72f4-09c4-4647-9d94-5f6daf805184" inuse="true" name="Config_RIIC0">
+<allocatable id="RIIC0">
+<isocket id="CountingClock" selection="Clock.tool_clock_pclkb" value="1.6E7"/>
+<option enabled="true" id="Bitrate" selection="FreeValue">
+<item id="FreeValue" input="100" vlaue="10"/>
+<item id="10" input="10" vlaue="0"/>
+<item id="50" input="50" vlaue="0"/>
+<item id="100" input="100" vlaue="0"/>
+<item id="400" input="400" vlaue="0"/>
+</option>
+<option enabled="true" id="NFEnable" selection="Enable">
+<item id="Enable" input="" vlaue="0"/>
+<item id="Disable" input="" vlaue="0"/>
+</option>
+<option enabled="true" id="NFStage" selection="1Stage">
+<item id="1Stage" input="" vlaue="0"/>
+<item id="2Stage" input="" vlaue="0"/>
+<item id="3Stage" input="" vlaue="0"/>
+<item id="4Stage" input="" vlaue="0"/>
+</option>
+<option enabled="true" id="SDAEnable" selection="Disable">
+<item id="Enable" input="" vlaue="0"/>
+<item id="Disable" input="" vlaue="0"/>
+</option>
+<option enabled="false" id="SDACNTClock" selection="Internal">
+<item id="Internal" input="" vlaue="0"/>
+<item id="HalfInternal" input="" vlaue="0"/>
+</option>
+<option enabled="false" id="SDAOutDelay" selection="Delay1">
+<item id="Delay1" input="" vlaue="0"/>
+<item id="Delay2" input="" vlaue="0"/>
+<item id="Delay3" input="" vlaue="0"/>
+<item id="Delay4" input="" vlaue="0"/>
+<item id="Delay5" input="" vlaue="0"/>
+<item id="Delay6" input="" vlaue="0"/>
+<item id="Delay7" input="" vlaue="0"/>
+<item id="Delay8" input="" vlaue="0"/>
+<item id="Delay9" input="" vlaue="0"/>
+<item id="Delay10" input="" vlaue="0"/>
+<item id="Delay11" input="" vlaue="0"/>
+<item id="Delay12" input="" vlaue="0"/>
+<item id="Delay13" input="" vlaue="0"/>
+<item id="Delay14" input="" vlaue="0"/>
+</option>
+<option enabled="true" id="Timeout" selection="Disable">
+<item id="Enable" input="" vlaue="0"/>
+<item id="Disable" input="" vlaue="0"/>
+</option>
+<option enabled="false" id="DetCondition" selection="SCLBoth">
+<item id="SCLLow" input="" vlaue="0"/>
+<item id="SCLHigh" input="" vlaue="0"/>
+<item id="SCLBoth" input="" vlaue="0"/>
+</option>
+<option enabled="false" id="DetTime" selection="LongMode">
+<item id="LongMode" input="" vlaue="0"/>
+<item id="ShortMode" input="" vlaue="0"/>
+</option>
+<option enabled="true" id="MasterALDEnable" selection="Enable">
+<item id="Enable" input="" vlaue="0"/>
+<item id="Disable" input="" vlaue="0"/>
+</option>
+<option enabled="true" id="NACKALDEnable" selection="Disable">
+<item id="Enable" input="" vlaue="0"/>
+<item id="Disable" input="" vlaue="0"/>
+</option>
+<option enabled="true" id="TSusEnable" selection="Enable">
+<item id="Enable" input="" vlaue="0"/>
+<item id="Disable" input="" vlaue="0"/>
+</option>
+<option enabled="true" id="IntTXIPriority" selection="Level7">
+<item id="Level0" input="" vlaue="0"/>
+<item id="Level1" input="" vlaue="0"/>
+<item id="Level2" input="" vlaue="0"/>
+<item id="Level3" input="" vlaue="0"/>
+<item id="Level4" input="" vlaue="0"/>
+<item id="Level5" input="" vlaue="0"/>
+<item id="Level6" input="" vlaue="0"/>
+<item id="Level7" input="" vlaue="0"/>
+<item id="Level8" input="" vlaue="0"/>
+<item id="Level9" input="" vlaue="0"/>
+<item id="Level10" input="" vlaue="0"/>
+<item id="Level11" input="" vlaue="0"/>
+<item id="Level12" input="" vlaue="0"/>
+<item id="Level13" input="" vlaue="0"/>
+<item id="Level14" input="" vlaue="0"/>
+<item id="Level15" input="" vlaue="0"/>
+</option>
+<option enabled="true" id="IntTEIPriority" selection="Level7">
+<item id="Level0" input="" vlaue="0"/>
+<item id="Level1" input="" vlaue="0"/>
+<item id="Level2" input="" vlaue="0"/>
+<item id="Level3" input="" vlaue="0"/>
+<item id="Level4" input="" vlaue="0"/>
+<item id="Level5" input="" vlaue="0"/>
+<item id="Level6" input="" vlaue="0"/>
+<item id="Level7" input="" vlaue="0"/>
+<item id="Level8" input="" vlaue="0"/>
+<item id="Level9" input="" vlaue="0"/>
+<item id="Level10" input="" vlaue="0"/>
+<item id="Level11" input="" vlaue="0"/>
+<item id="Level12" input="" vlaue="0"/>
+<item id="Level13" input="" vlaue="0"/>
+<item id="Level14" input="" vlaue="0"/>
+<item id="Level15" input="" vlaue="0"/>
+</option>
+<option enabled="true" id="IntRXIPriority" selection="Level7">
+<item id="Level0" input="" vlaue="0"/>
+<item id="Level1" input="" vlaue="0"/>
+<item id="Level2" input="" vlaue="0"/>
+<item id="Level3" input="" vlaue="0"/>
+<item id="Level4" input="" vlaue="0"/>
+<item id="Level5" input="" vlaue="0"/>
+<item id="Level6" input="" vlaue="0"/>
+<item id="Level7" input="" vlaue="0"/>
+<item id="Level8" input="" vlaue="0"/>
+<item id="Level9" input="" vlaue="0"/>
+<item id="Level10" input="" vlaue="0"/>
+<item id="Level11" input="" vlaue="0"/>
+<item id="Level12" input="" vlaue="0"/>
+<item id="Level13" input="" vlaue="0"/>
+<item id="Level14" input="" vlaue="0"/>
+<item id="Level15" input="" vlaue="0"/>
+</option>
+<option enabled="false" id="TMOIEnable" selection="Disable">
+<item id="Enable" input="" vlaue="0"/>
+<item id="Disable" input="" vlaue="0"/>
+</option>
+<option enabled="true" id="ALIEnable" selection="Enable">
+<item id="Enable" input="" vlaue="0"/>
+<item id="Disable" input="" vlaue="0"/>
+</option>
+<option enabled="true" id="STIEnable" selection="Enable">
+<item id="Enable" input="" vlaue="0"/>
+<item id="Disable" input="" vlaue="0"/>
+</option>
+<option enabled="true" id="SPIEnable" selection="Enable">
+<item id="Enable" input="" vlaue="0"/>
+<item id="Disable" input="" vlaue="0"/>
+</option>
+<option enabled="true" id="NAKIEnable" selection="Enable">
+<item id="Enable" input="" vlaue="0"/>
+<item id="Disable" input="" vlaue="0"/>
+</option>
+<option enabled="true" id="IntEEIPriority" selection="Level8">
+<item id="Level0" input="" vlaue="0"/>
+<item id="Level1" input="" vlaue="0"/>
+<item id="Level2" input="" vlaue="0"/>
+<item id="Level3" input="" vlaue="0"/>
+<item id="Level4" input="" vlaue="0"/>
+<item id="Level5" input="" vlaue="0"/>
+<item id="Level6" input="" vlaue="0"/>
+<item id="Level7" input="" vlaue="0"/>
+<item id="Level8" input="" vlaue="0"/>
+<item id="Level9" input="" vlaue="0"/>
+<item id="Level10" input="" vlaue="0"/>
+<item id="Level11" input="" vlaue="0"/>
+<item id="Level12" input="" vlaue="0"/>
+<item id="Level13" input="" vlaue="0"/>
+<item id="Level14" input="" vlaue="0"/>
+<item id="Level15" input="" vlaue="0"/>
+</option>
+<option enabled="true" id="TransEnd" selection="Enable">
+<item id="Enable" input="" vlaue="0"/>
+<item id="Disable" input="" vlaue="0"/>
+</option>
+<option enabled="true" id="RecvEnd" selection="Enable">
+<item id="Enable" input="" vlaue="0"/>
+<item id="Disable" input="" vlaue="0"/>
+</option>
+<option enabled="true" id="RecvErr" selection="Enable">
+<item id="Enable" input="" vlaue="0"/>
+<item id="Disable" input="" vlaue="0"/>
+</option>
+<option enabled="true" id="Mode" selection="I2C">
+<item id="I2C" input="" vlaue="0"/>
+<item id="SMBS" input="" vlaue="0"/>
+</option>
+</allocatable>
+<component description="This software component provides configurations of I2C master mode for RIIC and SCI." detailDescription="" display="I2C Master Mode" id="com.renesas.smc.tools.swcomponent.codegenerator.i2cmastermode" version="1.8.0"/>
+<allocator channelLevel0="0" channelLevel1="" channelLevel2="" channelLevel3="" channelLevel4="" channelLevel5="" description="RIIC channel 0" display="RIIC0" id="com.renesas.smc.swc.cg.rx.i2cmastermode.riic0" type="RIIC">
+<context>
+<option enabled="true" id="Mode" selection="I2C">
+<item enabled="true" id="I2C"/>
+<item enabled="true" id="SMBS"/>
+</option>
+</context>
+</allocator>
+<source description="Code generator components provide peripheral drivers with customized generated source geared towards small code size" display="Code Generator" id="com.renesas.smc.tools.swcomponent.codegenerator.source"/>
+</configuration>
+<configuration id="468b8d57-0132-40c9-8c90-6fea944c8f29" inuse="true" name="Config_PORT">
+<allocatable id="Port">
+<allocatable id="PORT0_Check">
+<option enabled="true" id="PortnEnable" selection="Disable">
+<item id="Enable" input="" vlaue="0"/>
+<item id="Disable" input="" vlaue="0"/>
+</option>
+</allocatable>
+<allocatable id="PORT1_Check">
+<option enabled="true" id="PortnEnable" selection="Disable">
+<item id="Enable" input="" vlaue="0"/>
+<item id="Disable" input="" vlaue="0"/>
+</option>
+</allocatable>
+<allocatable id="PORT2_Check">
+<option enabled="true" id="PortnEnable" selection="Disable">
+<item id="Enable" input="" vlaue="0"/>
+<item id="Disable" input="" vlaue="0"/>
+</option>
+</allocatable>
+<allocatable id="PORT3_Check">
+<option enabled="true" id="PortnEnable" selection="Disable">
+<item id="Enable" input="" vlaue="0"/>
+<item id="Disable" input="" vlaue="0"/>
+</option>
+</allocatable>
+<allocatable id="PORT4_Chan">
+<allocatable id="PORTx1_Item">
+<option enabled="true" id="UseStatus" selection="Out">
+<item id="Unuse" input="" vlaue="0"/>
+<item id="In" input="" vlaue="0"/>
+<item id="Out" input="" vlaue="0"/>
+</option>
+<option enabled="true" id="Output1" selection="Output1Use">
+<item id="Output1Unuse" input="" vlaue="0"/>
+<item id="Output1Use" input="" vlaue="0"/>
+</option>
+<option enabled="false" id="Pullup" selection="PullupUnuse">
+<item id="PullupUse" input="" vlaue="0"/>
+<item id="PullupUnuse" input="" vlaue="0"/>
+</option>
+</allocatable>
+<allocatable id="PORTx5_Item">
+<option enabled="true" id="UseStatus" selection="Out">
+<item id="Unuse" input="" vlaue="0"/>
+<item id="In" input="" vlaue="0"/>
+<item id="Out" input="" vlaue="0"/>
+</option>
+<option enabled="true" id="Output1" selection="Output1Use">
+<item id="Output1Unuse" input="" vlaue="0"/>
+<item id="Output1Use" input="" vlaue="0"/>
+</option>
+<option enabled="false" id="Pullup" selection="PullupUnuse">
+<item id="PullupUse" input="" vlaue="0"/>
+<item id="PullupUnuse" input="" vlaue="0"/>
+</option>
+</allocatable>
+<allocatable id="PORTx6_Item">
+<option enabled="true" id="UseStatus" selection="Out">
+<item id="Unuse" input="" vlaue="0"/>
+<item id="In" input="" vlaue="0"/>
+<item id="Out" input="" vlaue="0"/>
+</option>
+<option enabled="true" id="Output1" selection="Output1Use">
+<item id="Output1Unuse" input="" vlaue="0"/>
+<item id="Output1Use" input="" vlaue="0"/>
+</option>
+<option enabled="false" id="Pullup" selection="PullupUnuse">
+<item id="PullupUse" input="" vlaue="0"/>
+<item id="PullupUnuse" input="" vlaue="0"/>
+</option>
+</allocatable>
+<allocatable id="PORTx7_Item">
+<option enabled="true" id="UseStatus" selection="Out">
+<item id="Unuse" input="" vlaue="0"/>
+<item id="In" input="" vlaue="0"/>
+<item id="Out" input="" vlaue="0"/>
+</option>
+<option enabled="true" id="Output1" selection="Output1Use">
+<item id="Output1Unuse" input="" vlaue="0"/>
+<item id="Output1Use" input="" vlaue="0"/>
+</option>
+<option enabled="false" id="Pullup" selection="PullupUnuse">
+<item id="PullupUse" input="" vlaue="0"/>
+<item id="PullupUnuse" input="" vlaue="0"/>
+</option>
+</allocatable>
+<option enabled="true" id="ApplyAll" selection="ApplyallUnuse">
+<item id="ApplyallUse" input="" vlaue="0"/>
+<item id="ApplyallUnuse" input="" vlaue="0"/>
+</option>
+<option enabled="false" id="UseStatusAll" selection="UnuseAll">
+<item id="UnuseAll" input="" vlaue="0"/>
+<item id="InAll" input="" vlaue="0"/>
+<item id="OutAll" input="" vlaue="0"/>
+<item id="UnuseAlldisable" input="" vlaue="0"/>
+<item id="InAlldisable" input="" vlaue="0"/>
+<item id="OutAlldisable" input="" vlaue="0"/>
+</option>
+<option enabled="false" id="PullupAll" selection="PullupUnuseAll">
+<item id="PullupUseAll" input="" vlaue="0"/>
+<item id="PullupUnuseAll" input="" vlaue="0"/>
+<item id="PullupAlldisable" input="" vlaue="0"/>
+</option>
+<option enabled="false" id="Output1All" selection="Output1UnuseAll">
+<item id="Output1UnuseAll" input="" vlaue="0"/>
+<item id="Output1UseAll" input="" vlaue="0"/>
+<item id="Output1Alldisable" input="" vlaue="0"/>
+</option>
+</allocatable>
+<allocatable id="PORT4_Check">
+<option enabled="true" id="PortnEnable" selection="Enable">
+<item id="Enable" input="" vlaue="0"/>
+<item id="Disable" input="" vlaue="0"/>
+</option>
+</allocatable>
+<allocatable id="PORTB_Check">
+<option enabled="true" id="PortnEnable" selection="Disable">
+<item id="Enable" input="" vlaue="0"/>
+<item id="Disable" input="" vlaue="0"/>
+</option>
+</allocatable>
+<allocatable id="PORTC_Check">
+<option enabled="true" id="PortnEnable" selection="Disable">
+<item id="Enable" input="" vlaue="0"/>
+<item id="Disable" input="" vlaue="0"/>
+</option>
+</allocatable>
+<allocatable id="PORTD_Check">
+<option enabled="true" id="PortnEnable" selection="Disable">
+<item id="Enable" input="" vlaue="0"/>
+<item id="Disable" input="" vlaue="0"/>
+</option>
+</allocatable>
+<allocatable id="PORTE_Check">
+<option enabled="true" id="PortnEnable" selection="Disable">
+<item id="Enable" input="" vlaue="0"/>
+<item id="Disable" input="" vlaue="0"/>
+</option>
+</allocatable>
+<osocket id="PORTINFO" value=";P41_O;P45_O;P46_O;P47_O;"/>
+<option enabled="true" id="PortUseStatus" selection="PortUnuse">
+<item id="PortInuse" input="" vlaue="0"/>
+<item id="PortUnuse" input="" vlaue="0"/>
+</option>
+</allocatable>
+<component description="This software component provides configurations for General Purpose Input/Output. Common features such as reading, writing, and setting the direction of ports and pins can be configured. Enabling features such as open-drain outputs and internal pull-ups are also supported. " detailDescription="" display="Ports" id="com.renesas.smc.tools.swcomponent.codegenerator.port" version="2.0.0"/>
+<allocator channelLevel0="" channelLevel1="" channelLevel2="" channelLevel3="" channelLevel4="" channelLevel5="" description="Input output configuration of PORT" display="PORT" id="com.renesas.smc.swc.cg.rx.port.rx23w.PORT" type="">
+<context/>
+</allocator>
+<source description="Code generator components provide peripheral drivers with customized generated source geared towards small code size" display="Code Generator" id="com.renesas.smc.tools.swcomponent.codegenerator.source"/>
+</configuration>
+</tool>
+</smc>
